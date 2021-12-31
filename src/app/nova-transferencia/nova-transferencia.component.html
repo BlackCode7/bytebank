@@ -1,0 +1,21 @@
+<section class="container">
+    
+    <form class="formulario" (ngSubmit)="transferir()"><!--EventBind da angular-->
+           
+        <div class="form-field">         
+          <label class="form-control__label" for="valor">Valor</label>
+          <input class="form-control__input" id="valor" type="number" [(ngModel)]="valor" name="valor">
+        </div>
+      
+        <div class="form-field">
+          <label class="form-control__label" for="destino">Destino</label>
+          <input class="form-control__input" id="valor" type="text" [(ngModel)]="destino" name="destino">
+        </div>
+      
+        <div class="botao-wrapper">
+            <button class="botao" type="submit">Transferir</button><!--Botao tipo submit pra funcionar o evento do botao-->
+        </div>        
+      
+      </form>
+
+</section>
