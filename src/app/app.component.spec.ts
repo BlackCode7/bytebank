@@ -1,6 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
+// Aprofundando os testes com Karma e Jasmine
+
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
