@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { async, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TransferenciaService } from './transferencia.service';
@@ -8,6 +9,13 @@ import { NovaTransferenciaComponent } from '../nova-transferencia/nova-transfere
 import { AppComponent } from '../app.component';
 import { APP_BASE_HREF } from '@angular/common';
 //import { of } from 'rxjs';
+=======
+import { TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { TransferenciaService } from './transferencia.service';
+import { HttpClient } from '@angular/common/http';
+import { of } from 'rxjs';
+>>>>>>> 2b13ce235cfbf274f652e68c241616ca15112ca5
 
 fdescribe('TransferenciaService', () => { // O 'f' no inicio avisa ao jasmine que so vou rodar este teste
   let service: TransferenciaService; // Declara o serviço
@@ -33,6 +41,7 @@ fdescribe('TransferenciaService', () => { // O 'f' no inicio avisa ao jasmine qu
     const spy = spyOn(http, 'get').and.callThrough(); //Chamamos este método .and.callThrough() para evitar travamentos no teste
     service.todas(); //Chamo o metodo do service aqui todas()
     expect(spy).toHaveBeenCalledWith(url); //Aqui eu espero a chamada do spy
+<<<<<<< HEAD
   }); 
 
 });
@@ -106,4 +115,9 @@ it(`Testando se o AppComponent tem o título bytebank `, async(() => {
 //   });
 // });
 
+=======
+  })
+});
+
+>>>>>>> 2b13ce235cfbf274f652e68c241616ca15112ca5
 // OBS >>> Para rodar um teste com jasmine devemos usar o >>> npm test
